@@ -1,7 +1,7 @@
-var gutil				= require('gulp-util')
-  , buffer			= require('buffer').Buffer
-  , PluginError	= gutil.PluginError
-  , map					= require('event-stream').map
+var gutil       = require('gulp-util')
+  , buffer      = require('buffer').Buffer
+  , PluginError = gutil.PluginError
+  , map         = require('event-stream').map
 
 var versionRegex = function (extensions) {
   var exts = extensions.join('|')
