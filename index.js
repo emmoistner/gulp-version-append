@@ -1,12 +1,12 @@
-var gutil				= require('gulp-util'),
-		Buffer 			= require('buffer').Buffer,
+var	gutil				= require('gulp-util'),
+		buffer			= require('buffer').Buffer,
 		PluginError	= gutil.PluginError,
-		map 				= require('event-stream').map;
+		map					= require('event-stream').map;
 
 var defaults = {
 	versionRegex: function (extensions) {
 		var exts = extensions.join('|'),
-			regexString = '(\\.(?:' + exts + ')\\?v=)(\\@version\\@)([\' | \"])';
+		regexString = '(\\.(?:' + exts + ')\\?v=)(\\@version\\@)([\' | \"])';
 		return new RegExp(regexString, 'ig');
 	}
 };
